@@ -11,7 +11,12 @@ Tecnóloga en formación de Análisis y Desarrollo de Software (ADSO) con proyec
 
 Cuento con experiencia y formación técnica en desarrollo de software, incluyendo el diseño lógico de sistemas y el control de versiones con Git y GitHub. Me motiva especialmente la gestión estructurada de proyectos y el diseño de soluciones eficientes. Además de mi formación técnica, he participado activamente en iniciativas de liderazgo juvenil, educación financiera y emprendimiento tecnológico.
 
-## 🛠️ Tecnologías y Enfoques de Interés
-* **Control de Versiones y Modelado:** Git, GitHub, diagramación e ingeniería de requisitos.
-* **Áreas de Enfoque:** Liderazgo de equipos de desarrollo, gestión de proyectos y calidad de software.
-* **Metas a Corto Plazo:** Culminar con éxito el proyecto de desarrollo de software DAXE y avanzar con mi ciclo profesional en ingeniería de sistemas.
+## 📌 Resumen Profesional
+
+* Tecnóloga en formación de Análisis y Desarrollo de Software (ADSO) con proyección profesional hacia la Ingeniería de Sistemas en la Universidad EAFIT. Actualmente me desempeño como líder del equipo en el proyecto **DAXE**, coordinando la arquitectura del repositorio, la asignación de tareas y la integración de las funcionalidades del sistema.
+
+### 🛠️ Tecnologías y Lenguajes de Programación
+* **Lenguajes de programación:** Python, JavaScript
+* **Desarrollo Web & Frameworks:** HTML5, CSS3, React.js, Node.js
+* **Bases de Datos:** MySQL, MongoDB
+* **Herramientas de Control de Versiones:** Git, GitHub
