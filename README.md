@@ -11,7 +11,7 @@ A continuación se detallan los integrantes del proyecto, sus usuarios de GitHub
 | **Evelin Johana Pérez Correa** | @Evelin2405 | Líder de Proyecto / Desarrolladora |
 | **Sebastian Correa** | @SebastianCorrea001 | Desarrollador |
 | **Juan David Peña** | @juaan06 | Desarrollador |
-| **Xime Acevedo** | @[Usuario de Xime] | Desarrolladora |
+| **Xime Acevedo** | @xa452087-ctrl | Desarrolladora |
 
 ## 📁 Organización del Repositorio
 Así está estructurado el árbol de carpetas de nuestro proyecto:
