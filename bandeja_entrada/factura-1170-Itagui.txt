@@ -1,0 +1,5 @@
+pedido: 1170
+sede: Itagui
+fecha: 20-09-2026
+valor: 82000
+estado: entregado

@@ -1,0 +1,5 @@
+pedido: 1102
+sede: SABANETA
+fecha: 08/09/2026
+valor: 72000
+estado: entregado
