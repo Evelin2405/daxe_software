@@ -1,5 +1,0 @@
-pedido: 1068
-sede: ENVIGADO
-fecha: 21/09/2026
-valor: 87500
-estado: entregado

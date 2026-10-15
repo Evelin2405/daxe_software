@@ -1,5 +1,0 @@
-pedido: 1138
-sede: ENVIGADO
-fecha: 2026-09-18
-valor: 42500
-estado: cancelado

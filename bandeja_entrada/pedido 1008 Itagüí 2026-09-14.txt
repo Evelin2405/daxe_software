@@ -1,5 +1,0 @@
-pedido: 1008
-sede: Itagüí
-fecha: 2026-09-14
-valor: 73500
-estado: pendiente

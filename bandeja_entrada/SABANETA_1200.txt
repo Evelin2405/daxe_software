@@ -1,5 +1,0 @@
-pedido: 1200
-sede: SABANETA
-fecha: 08-09-2026
-valor: 76000
-estado: pendiente

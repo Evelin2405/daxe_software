@@ -1,0 +1,10 @@
+# Datos del cliente: se generan, no se suben
+bandeja_entrada/
+pedidos_ordenados/
+revisar/
+
+# Archivos que crea Python solo
+__pycache__/
+
+# Entorno virtual, si usan uno
+.venv/

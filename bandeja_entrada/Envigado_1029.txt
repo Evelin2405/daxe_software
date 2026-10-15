@@ -1,5 +1,0 @@
-pedido: 1029
-sede: Envigado
-fecha: 2026-09-12
-valor: 7000
-estado: pendiente

@@ -1,5 +1,0 @@
-pedido: 1070
-sede: envigado
-fecha: 23/09/2026
-valor: 87500
-estado: entregado

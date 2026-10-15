@@ -1,5 +1,0 @@
-pedido: 1012
-sede: itagui
-fecha: 25-09-2026
-valor: -16000
-estado: entregado

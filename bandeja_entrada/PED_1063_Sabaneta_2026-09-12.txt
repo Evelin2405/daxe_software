@@ -1,5 +1,0 @@
-pedido: 1063
-sede: Sabaneta
-fecha: 2026-09-12
-valor: 25000
-estado: pendiente

@@ -1,5 +1,0 @@
-pedido: 1099
-sede: Envigado
-fecha: 10-09-2026
-valor: 87500
-estado: entregado
