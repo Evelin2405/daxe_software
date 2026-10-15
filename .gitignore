@@ -1,0 +1,10 @@
+# Datos del cliente: se generan localmente, NO se suben a GitHub
+bandeja_entrada/
+pedidos_ordenados/
+revisar/
+
+# Archivos automáticos de Python solo
+__pycache__/
+
+# Entorno virtual
+.venv/
