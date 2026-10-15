@@ -1,0 +1,5 @@
+pedido: 1035
+sede: sabaneta
+fecha: 22/09/2026
+valor: 48500
+estado: cancelado

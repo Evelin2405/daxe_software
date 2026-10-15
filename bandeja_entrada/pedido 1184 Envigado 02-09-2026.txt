@@ -1,0 +1,5 @@
+pedido: 1184
+sede: Envigado 
+fecha: 02-09-2026
+valor: 57000
+estado: cancelado

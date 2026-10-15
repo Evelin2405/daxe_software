@@ -1,0 +1,5 @@
+pedido: 1234
+sede: Itagui
+fecha: 08/09/2026
+valor: 87500
+estado: pendiente
