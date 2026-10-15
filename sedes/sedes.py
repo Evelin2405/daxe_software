@@ -149,8 +149,46 @@ PARSERS = {".txt": _parsear_txt, ".csv": _parsear_csv, ".json": _parsear_json}
 
 
 # --------------------------------------------------------------------------
-# Procesamiento de un archivo
+# Lectura y procesamiento de un archivo
 # --------------------------------------------------------------------------
+def leer_pedido(ruta):
+    """Lee un archivo de la bandeja y devuelve sus campos como dict.
+
+    Las claves salen normalizadas ('Sede ' -> 'sede'). Lanza ArchivoInvalido
+    (con el motivo) si el archivo no puede ser un pedido: temporal, extension
+    no soportada, vacio, mal formado o sin ningun campo de pedido. Los errores
+    de disco (OSError) los propaga quien llama.
+    """
+    ruta = Path(ruta)
+    nombre = ruta.name
+    if nombre.startswith(("~$", ".")) or nombre.lower() in NOMBRES_DEL_SISTEMA:
+        raise ArchivoInvalido("archivo temporal o del sistema")
+
+    ext = ruta.suffix.lower()
+    if ext not in EXTENSIONES_VALIDAS:
+        raise ArchivoInvalido(f"extension no soportada ({ext or 'sin extension'})")
+
+    texto = _leer_texto(ruta)
+    if not texto.strip():
+        raise ArchivoInvalido("archivo vacio")
+
+    datos = PARSERS[ext](texto)
+    if not CLAVES_PEDIDO & datos.keys():
+        raise ArchivoInvalido("no es un pedido (sin campos reconocibles)")
+    return datos
+
+
+def sede_de_datos(datos):
+    """Devuelve (sede, motivo) a partir de los campos de un pedido ya leido."""
+    crudo = next((datos[c] for c in CLAVES_SEDE if c in datos), None)
+    if _es_nulo(crudo):
+        return None, "sede ausente o nula"
+    sede = reconocer_sede(crudo)
+    if sede is None:
+        return None, f"sede no reconocida ({str(crudo).strip()[:40]})"
+    return sede, None
+
+
 def procesar_archivo(ruta):
     """Analiza un archivo y devuelve (sede, motivo).
 
@@ -158,33 +196,8 @@ def procesar_archivo(ruta):
     Si hay que descartarlo         -> (None, motivo).
     Nunca lanza excepciones: cualquier problema queda como motivo.
     """
-    ruta = Path(ruta)
-    nombre = ruta.name
     try:
-        if nombre.startswith(("~$", ".")) or nombre.lower() in NOMBRES_DEL_SISTEMA:
-            return None, "archivo temporal o del sistema"
-
-        ext = ruta.suffix.lower()
-        if ext not in EXTENSIONES_VALIDAS:
-            return None, f"extension no soportada ({ext or 'sin extension'})"
-
-        texto = _leer_texto(ruta)
-        if not texto.strip():
-            return None, "archivo vacio"
-
-        datos = PARSERS[ext](texto)
-        if not CLAVES_PEDIDO & datos.keys():
-            return None, "no es un pedido (sin campos reconocibles)"
-
-        crudo = next((datos[c] for c in CLAVES_SEDE if c in datos), None)
-        if _es_nulo(crudo):
-            return None, "sede ausente o nula"
-
-        sede = reconocer_sede(crudo)
-        if sede is None:
-            return None, f"sede no reconocida ({str(crudo).strip()[:40]})"
-        return sede, None
-
+        return sede_de_datos(leer_pedido(ruta))
     except ArchivoInvalido as e:
         return None, str(e)
     except (OSError, UnicodeError, ValueError, csv.Error) as e:
