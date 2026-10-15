@@ -1,5 +1,0 @@
-pedido: 1193
-sede: 
-fecha: 25/09/2026
-valor: 50500
-estado: entregado

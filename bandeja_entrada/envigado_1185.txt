@@ -1,5 +1,0 @@
-pedido: 1185
-sede: envigado
-fecha: 09/09/2026
-valor: 7500
-estado: entregado

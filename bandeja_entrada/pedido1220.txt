@@ -1,5 +1,0 @@
-pedido: 1220
-sede: Itagüí
-fecha: 12-09-2026
-valor: 35000
-estado: entregado

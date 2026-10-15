@@ -1,5 +1,0 @@
-pedido: 1075
-sede: Sabaneta
-fecha: 06/09/2026
-valor: 41000
-estado: cancelado

@@ -1,5 +1,0 @@
-pedido: 1074
-sede: itagüi
-fecha: 2026-09-26
-valor: 35000
-estado: entregado

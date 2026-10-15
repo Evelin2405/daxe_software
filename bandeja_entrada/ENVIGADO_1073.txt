@@ -1,5 +1,0 @@
-pedido: 1073
-sede: ENVIGADO
-fecha: 12-09-2026
-valor: 89000
-estado: pendiente

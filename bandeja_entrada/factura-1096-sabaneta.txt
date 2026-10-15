@@ -1,5 +1,0 @@
-pedido: 1096
-sede: sabaneta
-fecha: 05/09/2026
-valor: 7000
-estado: entregado

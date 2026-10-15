@@ -1,5 +1,0 @@
-pedido: 1162
-sede: ITAGUI
-fecha: 2026-09-18
-valor: 79500
-estado: entregado

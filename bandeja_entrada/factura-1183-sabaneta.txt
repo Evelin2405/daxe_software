@@ -1,5 +1,0 @@
-pedido: 1183
-sede: sabaneta
-fecha: 2026-09-08
-valor: 79000
-estado: cancelado

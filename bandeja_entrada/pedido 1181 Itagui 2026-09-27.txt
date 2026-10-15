@@ -1,5 +1,0 @@
-pedido: 1181
-sede: Itagui
-fecha: 2026-09-27
-valor: 43000
-estado: cancelado
